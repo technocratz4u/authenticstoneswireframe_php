@@ -610,3 +610,13 @@ a#our-link{
 .sameHeight {
 	 max-height: 100px;
 }
+.myAccountStyle{
+	color: #ffffff;
+}
+
+.myAccountStyle:focus,
+.myAccountStyle:hover{
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: underline;
+}

@@ -41,7 +41,20 @@
 				  </form>
 			    </div>
             	<ul class="menu">
-                    <li>
+            		<li>
+		                <div class="dropdown">
+		  				<button class="btn btn-link btn-xs dropdown-toggle myAccountStyle" type="button" id="myaccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    Hello Rahul
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="myaccount">
+						    <li><a href="#">Your Account</a></li>
+						    <li><a href='<?php echo __WEB_ROOT?>/order'>Your Orders</a></li>
+						    <li><a href="#">Logout</a></li>
+						  </ul>
+						</div>
+		             </li>
+                    <li class="piped">
                     	<a id="loginLink" href="#signinupModal" data-toggle="modal">Login</a>
                     </li>
                     <li class="piped">

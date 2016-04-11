@@ -36,9 +36,11 @@
 
 					<div class="page-box">
 
-						<form method="post" action="">
+						<form method="post" action="/checkout">
+							<div class="h2">
+							  Your Orders
+							</div>
 
-							<h1>Shopping cart</h1>
 							<p class="text-muted">You currently have 3 item(s) in your
 								cart.</p>
 							<div class="table-responsive">
@@ -56,7 +58,7 @@
 										<tr>
 											<td><a href="#"> <img
 													class="img-responsive cart-image-width"
-													src="<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg"
+													src='<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg'
 													alt="Diamond">
 
 											</a></td>
@@ -71,7 +73,7 @@
 										<tr>
 											<td><a href="#"> <img
 													class="img-responsive cart-image-width"
-													src="<?php echo __WEB_ROOT?>/static/img/ruby-3d.jpg"
+													src='<?php echo __WEB_ROOT?>/static/img/ruby-3d.jpg'
 													alt="Ruby">
 											</a></td>
 											<td><a href="#">Ruby Cut</a></td>
@@ -102,14 +104,17 @@
 
 									</div>
 									<div class="col-xs-6 col-sm-4 col-md-3">
-										<div class="input-group">
-											<input type="text" class="form-control"> <span
-												class="input-group-btn">
-												<button class="btn btn-dark" type="button">
-													<i class="fa fa-gift"></i>Apply
-												</button>
-											</span>
-										</div>
+										<form>
+											<div class="input-group">
+												<input type="text" class="form-control"> <span
+													class="input-group-btn">
+													<button class="btn btn-dark" type="button">
+														<i class="fa fa-gift"></i>Apply
+													</button>
+												</span>
+											</div>
+
+										</form>
 									</div>
 									<div class="col-md-6 hidden-xs hidden-sm"></div>
 								</div>
@@ -138,7 +143,6 @@
 						</form>
 
 					</div>
-					<!-- /.box -->
 
 
 				</div>

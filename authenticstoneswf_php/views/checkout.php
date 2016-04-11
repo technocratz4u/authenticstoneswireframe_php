@@ -35,60 +35,111 @@
 
 					<div class="page-box">
 						<form method="post" action="#">
-							<h1>Checkout</h1>
+						
+						<div class="h3">
+						  <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+						  
+						  Secured Checkout
+						</div>
+						
+	
 							<ul class="nav nav-pills nav-justified">
-								<li class="active"><a href="#checkout-address"
-									data-toggle="pill"><i class="fa fa-map-marker"></i><br>Address</a>
+								<li class="active"><a id="address_tab" href="#checkout-address"
+									data-toggle="pill"><i class="fa fa-map-marker"></i><br>Delivery Address</a>
 								</li>
-								<li class=""><a href="#checkout-delivery"
-									data-toggle="pill"><i class="fa fa-truck"></i><br>Delivery
-										Method</a></li>
-								<li class=""><a href="#checkout-payment" data-toggle="pill"><i
+								<li id="review_li" class="disabled"><a  id="review_tab" href="#checkout-review"
+									data-toggle="pill"><i class="fa fa-eye"></i><br>Order
+										Summary</a></li>
+								<li id="payment_li" class="disabled"><a id="payment_tab" href="#checkout-payment" data-toggle="pill"><i
 										class="fa fa-money"></i><br>Payment Method</a></li>
-								<li class=""><a href="#checkout-review" data-toggle="pill"><i
-										class="fa fa-eye"></i><br>Order Review</a></li>
 							</ul>
 
 							<div class="tab-content">
 								<div class="tab-pane fade in active" id="checkout-address">
-									<div class="page-content">
+								
+								<div class="page-content " id="address">
+									<div class="row">
+										   <div class="col-sm-6">
+												<div class="page-box">
+													<h3>
+														<i class="fa fa-map-marker"></i> Address 1
+													</h3>
+													<p>
+														388 Sita Building, 4th Fl. <br>Suite 401 <br>Mahaseak
+														Rd. <br>Suriyawongse, Bangrak <br>Bangkok 10500
+														<br> <strong>Thailand</strong>
+													</p>
+
+													<div class="page-box-footer text-center">
+
+														<input type="radio" name="address" value="address1">
+													</div>
+												</div>
+											</div>
+										   <div class="col-sm-6">
+												<div class="page-box">
+													<h3>
+														<i class="fa fa-map-marker"></i> Address 2
+													</h3>
+													<p>
+														388 Sita Building, 4th Fl. <br>Suite 401 <br>Mahaseak
+														Rd. <br>Suriyawongse, Bangrak <br>Bangkok 10500
+														<br> <strong>Thailand</strong>
+													</p>
+
+													<div class="page-box-footer text-center">
+
+														<input type="radio" name="address" value="address2">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="addressbtn">
+	
+													<button id="addNewAddr" class="btn btn-dark">
+														+ ADD NEW ADDRESS
+													</button>
+
+												</div>
+											</div>
+										</div>
+							
+								
+								</div>
+								
+									<div class="page-content" id="newAddress" style="display: none;">
 										<div class="row">
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label for="firstname">Firstname</label> <input type="text"
+													<label for="firstname">First Name</label> <input type="text"
 														class="form-control" id="firstname">
 												</div>
 											</div>
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label for="lastname">Lastname</label> <input type="text"
+													<label for="lastname">Last Name</label> <input type="text"
 														class="form-control" id="lastname">
 												</div>
 											</div>
 										</div>
-										<!-- /.row -->
-
 										<div class="row">
-											<div class="col-sm-6">
+											<div class="col-sm-12">
 												<div class="form-group">
-													<label for="company">Company</label> <input type="text"
-														class="form-control" id="company">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label for="street">Street</label> <input type="text"
+													<label for="Street">Street,Colony</label> <input type="text"
 														class="form-control" id="street">
 												</div>
 											</div>
 										</div>
+										
 										<!-- /.row -->
 
 										<div class="row">
 											<div class="col-sm-6 col-md-3">
 												<div class="form-group">
-													<label for="city">Company</label> <input type="text"
-														class="form-control" id="city">
+													<label for="city">Telephone</label> <input type="text"
+														class="form-control" id="phone">
 												</div>
 											</div>
 											<div class="col-sm-6 col-md-3">
@@ -112,65 +163,46 @@
 
 											<div class="col-sm-6">
 												<div class="form-group">
-													<label for="phone">Telephone</label> <input type="text"
-														class="form-control" id="phone">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label for="email">Email</label> <input type="text"
+													<label for="phone">Email</label> <input type="text"
 														class="form-control" id="email">
 												</div>
 											</div>
+											<div class="col-sm-6">
+												
+											</div>
 
 										</div>
-										<!-- /.row -->
-									</div>
-								</div>
-								<div class="tab-pane fade" id="checkout-delivery">
-									<div class="page-content">
 										<div class="row">
-											<div class="col-sm-6">
-												<div class="page-box">
+											<div class="col-sm-12">
+												<div class="addressbtn">
+	
+													<button id="useExiAddr" class="btn btn-dark">
+														USE EXISTING ADDRESS
+													</button>
 
-													<h4>Fedex</h4>
-
-													<p>Get it right on next day - fastest option possible.</p>
-
-													<div class="page-box-footer text-center">
-
-														<input type="radio" name="delivery" value="delivery1">
-													</div>
 												</div>
 											</div>
-											<div class="col-sm-6">
-												<div class="page-box">
-
-													<h4>USPS Next Day</h4>
-
-													<p>Get it right on next day - fastest option possible.</p>
-
-													<div class="page-box-footer text-center">
-
-														<input type="radio" name="delivery" value="delivery2">
-													</div>
-												</div>
-											</div>
-
 										</div>
 										<!-- /.row -->
-
 									</div>
 								</div>
+
 								<div class="tab-pane fade" id="checkout-payment">
 									<div class="page-content">
 										<div class="row">
-											<div class="col-sm-6">
+											<div class="col-sm-6 col-sm-offset-3">
 												<div class="page-box">
+												<h4>Paypal</h4>
 
-													<h4>Paypal</h4>
-
-													<p>We like it all.</p>
+													<a
+														href="https://www.paypal.com/in/webapps/mpp/paypal-popup"
+														title="Paypal"
+														onclick="javascript:window.open('https://www.paypal.com/in/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">
+														<img
+																class="img-responsive"
+																src='<?php echo __WEB_ROOT?>/static/img/partners_paypal.jpg'
+																border="0" alt="PayPal Acceptance Mark">
+													</a>
 
 													<div class="page-box-footer text-center">
 
@@ -178,19 +210,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="col-sm-6">
-												<div class="page-box">
 
-													<h4>Payment gateway</h4>
-
-													<p>VISA and Mastercard only.</p>
-
-													<div class="page-box-footer text-center">
-
-														<input type="radio" name="payment" value="payment2">
-													</div>
-												</div>
-											</div>
 										</div>
 										<!-- /.row -->
 
@@ -213,7 +233,7 @@
 													<tr>
 														<td><a href="#"> <img
 																class="img-responsive cart-image-width"
-																src="<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg"
+																src='<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg'
 																alt="Diamond">
 
 														</a></td>
@@ -227,11 +247,11 @@
 													<tr>
 														<td><a href="#"> <img
 																class="img-responsive cart-image-width"
-																src="<?php echo __WEB_ROOT?>/static/img/ruby-3d.jpg"
+																src='<?php echo __WEB_ROOT?>/static/img/ruby-3d.jpg'
 																alt="Ruby">
 														</a></td>
 														<td><a href="#">Ruby Cut</a></td>
-														<td>1</td>
+														<td>2</td>
 														<td>$200.00</td>
 														<td>$0.00</td>
 														<td>$200.00</td>
@@ -255,17 +275,15 @@
 							</div>
 
 
-
-
 							<div class="page-box-footer">
 								<div class="pull-left">
-									<a href="<?php echo __WEB_ROOT?>/basket"
+									<a href='<?php echo __WEB_ROOT?>/static/html/basket.jsp'
 										class="btn btn-default"><i class="fa fa-chevron-left"></i>Back
 										to basket</a>
 								</div>
 								<div class="pull-right">
-									<button type="submit" class="btn btn-dark">
-										Continue to Delivery Method<i class="fa fa-chevron-right"></i>
+									<button id="checkoutBtn" value= "chekout_address" class="btn btn-dark">
+										Continue to Order Review<i class="fa fa-chevron-right"></i>
 									</button>
 								</div>
 								<div class="clearfix"></div>
@@ -327,12 +345,13 @@
 		</div>
 		<!-- /.container -->
 	</div>
-
 	<!-- Home page content end -->
 
 	<?php include "footer.php"; ?>
 
 	<?php include "footer_includes.php"; ?>
+	
+	 <script src="<?php echo __WEB_ROOT?>/static/js/checkout.js"></script>
 
 </body>
 </html>
