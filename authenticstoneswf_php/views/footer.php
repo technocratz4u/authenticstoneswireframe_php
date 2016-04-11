@@ -29,7 +29,7 @@
 						<li><a href="<?php echo __WEB_ROOT?>/returnpolicy">Return Policy</a></li>
                         <li><a href="<?php echo __WEB_ROOT?>/privacypolicy">Privacy Policy</a>
                         </li>
-                        <li><a href="#">Shipping Policy</a>
+                        <li><a href="<?php echo __WEB_ROOT?>/shippingpolicy">Shipping Policy</a>
                         </li>
                         <li><a href="#">Frequently Asked Questions</a>
                         </li>

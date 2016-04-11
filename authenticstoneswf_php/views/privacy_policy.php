@@ -472,7 +472,5 @@
 	<?php include "footer.php"; ?>
 
 	<?php include "footer_includes.php"; ?>
-
-	<script src="<?php echo __WEB_ROOT?>/static/js/home.js"></script>
 </body>
 </html>

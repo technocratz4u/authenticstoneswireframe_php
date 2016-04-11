@@ -257,15 +257,15 @@
                         <div class="col-md-4 col-sm-6">
                             <div class="product">
                          
-                                <a href="#">
+                                <a href="<?php echo __WEB_ROOT?>/productdetail">
                                     <img src="<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
                                     <h3><a href="#">Diamond Cut </a> Add Description here</h3>
                                     <p class="price">$143.00</p>
                                     <p class="buttons">
-                                        <a href="#" class="btn btn-default">View detail</a>
-                                        <a href="#" class="btn btn-dark"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                        <a href="<?php echo __WEB_ROOT?>/productdetail" class="btn btn-default">View detail</a>
+                                        <a href="<?php echo __WEB_ROOT?>/basket" class="btn btn-dark"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                                     </p>
                                 </div>
                                 <!-- /.text -->
