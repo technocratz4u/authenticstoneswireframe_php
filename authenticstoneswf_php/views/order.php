@@ -30,6 +30,9 @@
 					</ul>
 				</div>
 			</div>
+			
+			<div class="page-box">
+			
 			<div class="row">
 				<div class="col-xs-12">
 					<h1>Your Orders</h1>
@@ -58,6 +61,7 @@
 					
 				</div>
 			</div>
+			
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="panel panel-default" id="order1">
@@ -69,6 +73,9 @@
 												<p>
 													Placed on Mon, 18th Jan'16 at 12:06pm
 												</p>
+												<p>
+													Total Amount Rs840
+												</p>
 											</div>
 											<div
 												class="col-sm-4 col-md-1 col-lg-3">
@@ -78,68 +85,34 @@
 										</div>
 						</div>
 						<div class="panel-body">
-
-
-							<div class="table-responsive">
-								<table class="table">
-									<thead>
-										<tr>
-											<th colspan="2">Product</th>
-											<th>Quantity</th>
-											<th>Unit price</th>
-											<th>Discount</th>
-											<th>Status</th>
-											<th colspan="2">Total</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td><a href="#"> <img
-													class="img-responsive cart-image-width"
-													src='<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg'
+								<div class="row rowmargntop">
+											<div class="col-sm-6 col-md-2">
+											<a href="#"> <img
+													class="img-responsive order-image-width"
+													src="/static/img/diamond-3d.jpg"
 													alt="Diamond">
-
-											</a></td>
-											<td><a href="#">Diamond Cut</a></td>
-											<td>2
-											</td>
-											<td>$123.00</td>
-											<td>$0.00</td>
-											<td>Delivered</td>
-											<td>$246.00</td>
-											
-										</tr>
-										<tr>
-											<td><a href="#"> <img
-													class="img-responsive cart-image-width"
-													src='<?php echo __WEB_ROOT?>/static/img/ruby-3d.jpg'
-													alt="Ruby">
-											</a></td>
-											<td><a href="#">Ruby Cut</a></td>
-											<td>1
-											</td>
-											<td>$200.00</td>
-											<td>$0.00</td>
-											<td>Delivered</td>
-											<td>$200.00</td>
-											
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<th colspan="6">Total</th>
-											<th colspan="1">$446.00</th>
-										</tr>
-									</tfoot>
-								</table>
-
-							</div>
+											</a>
+											</div>
+											<div class="col-sm-6 col-md-4 product-headding">
+											<h5 class="text-uppercase">DIAMOND CUT STONES</h5>
+											<h5 class="text-uppercase">SIZE 8*5*9| QTY 3</h5>
+											</div>
+											<div class="col-sm-6 col-md-3">
+											<h5 class="text-uppercase delivered">DELIVERED</h5>
+											<p>on Fri,22 Jan 2016</p>
+											</div>
+											<div class="col-sm-6 col-md-3">
+											   <h5>You Cannot Return or Exchange this product</h5>
+											</div>
+							   </div>
+						
 						</div>
 
 					</div>
 
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="panel panel-default" id="order2">
@@ -189,6 +162,7 @@
 					</div>
 
 				</div>
+			</div>
 			</div>
 			
 			
