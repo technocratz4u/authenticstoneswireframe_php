@@ -8,7 +8,7 @@
 }
 
 #info {
-	background-color: #000;
+	background-color: #989898;
 	color: #fff;
 }
 
@@ -19,4 +19,16 @@
 #product-quantity {
 	max-width: 60px;
 	margin-right: 5%;
+}
+
+#thumbs a {
+  display: block;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  border: solid 2px transparent;
+  margin-bottom: 10%;
+}
+
+#thumbs a.active {
+  border-color: #989898;
 }

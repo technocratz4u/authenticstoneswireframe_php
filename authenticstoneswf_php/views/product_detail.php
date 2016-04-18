@@ -10,7 +10,8 @@
 <title>Authentic Stones Privacy Policy</title>
 
 <?php include "header_includes.php"; ?>
-<link href="<?php echo __WEB_ROOT?>/static/css/productdetail.css" rel="stylesheet" />
+<link href="<?php echo __WEB_ROOT?>/static/css/productdetail.css"
+	rel="stylesheet" />
 
 </head>
 
@@ -32,17 +33,38 @@
 			</div>
 
 			<div class="row">
-				<div class="col-xs-12 col-md-6">
-					<a href="<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg"
-						class="thumbnail"> <img
-						src="<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg"
-						alt="" class="img-responsive" id="product-image">
-					</a>
+				<div class="col-md-2 hidden-xs hidden-sm">
+					<div id="thumbs">
+						<a href="<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg"
+							class="thumb"> <img
+							src="<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg" alt=""
+							class="img-responsive">
+						</a> <a href="<?php echo __WEB_ROOT?>/static/img/ruby-3d.jpg"
+							class="thumb"> <img
+							src="<?php echo __WEB_ROOT?>/static/img/ruby-3d.jpg" alt=""
+							class="img-responsive">
+						</a> <a href="<?php echo __WEB_ROOT?>/static/img/sapphire-3d.jpg"
+							class="thumb"> <img
+							src="<?php echo __WEB_ROOT?>/static/img/sapphire-3d.jpg" alt=""
+							class="img-responsive">
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div id="mainImage">
+						<img src="<?php echo __WEB_ROOT?>/static/img/diamond-3d.jpg"
+							alt="" class="img-responsive" id="product-image">
+					</div>
 				</div>
 				<div class="clearfix visible-xs-block"></div>
-				<div class="col-xs-12 col-md-6">
+				<div class="col-xs-12 col-sm-6 col-md-4">
 					<h3>29.09 ct. Beautiful Emerald (Zambia) Drop - 23.7 x 14.6 mm</h3>
 					<h3>$124.00</h3>
+					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 					<p>&nbsp;</p>
 					<p>
 						Diamonds are essentially considered to be forever because of their
@@ -53,25 +75,31 @@
 					<hr>
 					<div class="media">
 						<div class="media-body">
-							<input type="number" value="1" class="form-control pull-left"
-								id="product-quantity" min="1">
-							<a href="<?php echo __WEB_ROOT?>/basket" class="btn btn-dark"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+							<p>
+								<input type="number" value="1" class="form-control pull-left"
+									id="product-quantity" min="1">
+							</p>
+							<p>&nbsp;</p>
+							<p>
+								<a href="<?php echo __WEB_ROOT?>/basket" class="btn btn-dark"><i
+									class="fa fa-shopping-cart"></i> Add to cart</a>
+							</p>
 							<p>&nbsp;</p>
 							<p>Show it to your friends</p>
 							<p>
 								<a href="#" class="external facebook" data-animate-hover="pulse"><i
-									class="fa fa-facebook"></i></a> <a href="#" class="external gplus"
-									data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
-								<a href="#" class="external twitter" data-animate-hover="pulse"><i
+									class="fa fa-facebook"></i></a> <a href="#"
+									class="external gplus" data-animate-hover="pulse"><i
+									class="fa fa-google-plus"></i></a> <a href="#"
+									class="external twitter" data-animate-hover="pulse"><i
 									class="fa fa-twitter"></i></a> <a href="#" class="email"
 									data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
 							</p>
 						</div>
 						<div class="media-right">
-							<img
-								src="<?php echo __WEB_ROOT?>/static/img/partners_paypal.jpg"
-								class="media-object buy-from-us-img" border="0" alt="PayPal">
-							<img class="media-object buy-from-us-img"
+							<img src="<?php echo __WEB_ROOT?>/static/img/partners_paypal.jpg"
+								class="media-object buy-from-us-img" border="0" alt="PayPal"> <img
+								class="media-object buy-from-us-img"
 								src="<?php echo __WEB_ROOT?>/static/img/FedEx-Express-logo-300x224_1.png"
 								alt="FedEx">
 						</div>
@@ -79,7 +107,6 @@
 					<p>&nbsp;</p>
 					<hr class="hidden-md hidden-lg">
 				</div>
-
 				<div class="clearfix"></div>
 				<div class="row" id="details">
 					<div class="col-xs-12 col-md-8">
@@ -97,11 +124,11 @@
 									</tr>
 									<tr>
 										<td>Description</td>
-										<td>Zambian mines have produced finest quality emeralds
-											and one such drop is offered here. The shiny polished 23.7 x
-											14.6 mm loose drop shaped emerald is classy. Make drop
-											earrings or pendant, with hint of gold and diamond assent it
-											will look stunning with both Indian and Western outfits.</td>
+										<td>Zambian mines have produced finest quality emeralds and
+											one such drop is offered here. The shiny polished 23.7 x 14.6
+											mm loose drop shaped emerald is classy. Make drop earrings or
+											pendant, with hint of gold and diamond assent it will look
+											stunning with both Indian and Western outfits.</td>
 									</tr>
 									<tr>
 										<td>Stock No.</td>
@@ -143,6 +170,8 @@
 	<?php include "footer.php"; ?>
 
 	<?php include "footer_includes.php"; ?>
+	
+	<script src="<?php echo __WEB_ROOT?>/static/plugins/js/front.js"></script>
 
 </body>
 </html>
